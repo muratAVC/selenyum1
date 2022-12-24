@@ -47,10 +47,8 @@ public class Exercize1 {
         //9. Fill details: Title, Name, Email, Password, Date of birth
         WebElement title=Cdriver.findElement(By.xpath("//input[@id='id_gender1']"));
         title.click();
-        WebElement name=Cdriver.findElement(By.xpath("//input[@id='name']"));
-        name.sendKeys("Adil Karagoz");
-        WebElement pasword= Cdriver.findElement(By.xpath("//input[@id='password']"));
-        pasword.sendKeys("123456789");
+        Cdriver.findElement(By.xpath("//input[@id='name']")).sendKeys("Adil Karagoz");
+        Cdriver.findElement(By.xpath("//input[@id='password']")).sendKeys("123456789");
         WebElement birth_d= Cdriver.findElement(By.xpath("//select[@id='days']"));
         birth_d.sendKeys("04");
         WebElement birth_M= Cdriver.findElement(By.xpath("//select[@id='months']"));
